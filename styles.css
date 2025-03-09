@@ -29,7 +29,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100dvh;
-    padding: 0 1rem;
+    padding: 1rem;
 }
 
 .card {
@@ -40,7 +40,7 @@ body {
 
 .card__image img {
     width: 100%;
-    height: auto;
+    height: 250px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
@@ -118,4 +118,36 @@ body {
 
 .add-to-cart:hover {
     background-color: var(--green-700);
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        display: flex;
+    }
+
+    .card__image {
+        width: 50%;
+    }
+
+    .card__image img {
+        border-radius: 10px 0 0 10px;
+        height: 100%;
+    }
+
+    .card__content {
+        padding: 2rem;
+        width: 50%;
+    }
+
+    .title {
+        margin-bottom: 1.5rem;
+    }
+
+    .description {
+        margin-bottom: 2rem;
+    }
+
+    .add-to-cart {
+        margin-top: 2rem;
+    }
 }
