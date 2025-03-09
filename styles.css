@@ -37,3 +37,85 @@ body {
     border-radius: 10px;
     max-width: 600px;
 }
+
+.card__image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card__content {
+    padding: 1.5rem;
+}
+
+.category {
+    color: var(--grey);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    font-weight: var(--fw-montserrat-medium);
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    display: block;
+}
+
+.title {
+    color: var(--black);
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: var(--fw-fraunces-bold);
+    line-height: 1;
+    margin: 1rem 0;
+}
+
+.description {
+    color: var(--grey);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: var(--fw-montserrat-medium);
+    line-height: 1.5;
+    margin: 1rem 0;
+}
+
+.price {
+    color: var(--green-500);
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    font-weight: var(--fw-fraunces-bold);
+    line-height: 1;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.prev__price {
+    color: var(--grey);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: var(--fw-montserrat-medium);
+    text-decoration: line-through;
+}
+
+.add-to-cart {
+    background-color: var(--green-500);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: var(--fw-montserrat-bold);
+    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    transition: background 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: var(--green-700);
+}
